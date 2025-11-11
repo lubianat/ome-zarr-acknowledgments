@@ -1,0 +1,47 @@
+name: Add contributor
+description: Provide the details for a new contributor or update an existing entry.
+title: "Add contributor: "
+labels:
+  - data-needed
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping keep the acknowledgments up to date. Please share as much information as you can.
+  - type: input
+    id: person-name
+    attributes:
+      label: Person name
+      description: Full name as it should appear on the acknowledgments page.
+      placeholder: e.g. Jane Doe
+    validations:
+      required: true
+  - type: textarea
+    id: affiliations
+    attributes:
+      label: Affiliation(s)
+      description: One per line, ideally matching the wording used by the institution.
+      placeholder: |
+        Institute for Imaginary Microscopy, Example City, Country
+        Example University, Country
+    validations:
+      required: true
+  - type: textarea
+    id: resources
+    attributes:
+      label: Relevant resource(s)
+      description: Provide at least one link (paper, dataset, tool, etc.) that associates the person with OME-Zarr/OME-NGFF.
+      placeholder: https://ngff.openmicroscopy.org/rfc/6/index.html
+    validations:
+      required: true
+  - type: input
+    id: contact
+    attributes:
+      label: Contact (optional)
+      description: How we can reach you if clarification is needed.
+      placeholder: email@example.org or GitHub handle
+  - type: textarea
+    id: notes
+    attributes:
+      label: Additional notes
+      description: Anything else we should know (ORCID, preferred short affiliation, ordering, etc.).

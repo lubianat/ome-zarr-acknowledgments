@@ -1,51 +1,49 @@
+# OME-Zarr Acknowledgments
 
-# How does it work
+This repository keeps a curated list of people, affiliations, and resources tied to the OME-Zarr/OME-NGFF ecosystem, and serves the acknowledgments page published from this data.
 
+## How it works
 
-People related to the development of OME-Zarr/OME-NGFF are listed with affiliations in `people.yaml`. A shortener for big affiliations is available on `affiliation_shortener`, which also maps affiliations to countries.
+| File                                                       | Purpose                                                                                                         |
+| ---------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------- |
+| [`people.yaml`](people.yaml)                               | Holds the canonical list of people, their affiliations, optional ORCIDs, and the resources that reference them. |
+| [`affiliation_shortener.yaml`](affiliation_shortener.yaml) | Maps long-form affiliations to short labels, country codes, and optional ordering preferences.                  |
+| [`index.html`](index.html)                                 | Loads the YAML files in the browser and renders the public acknowledgments view.                                |
 
-Info from the yaml files is pulled and displayed by index.html.
+Anyone with at least one affiliation and a `resource` other than the image.sc forum appears in the highlighted contributors section near the top of the page.
 
-Any people with at least 1 affiliation and linked to some `resource` other than the image.sc forum are shown in the upper part. 
+## Add a missing name
 
-## Adding a missing name
+### Let us know
 
-### Let us know 
+Contact [Tiago](https://tiago.bio.br) or open an [issue](https://github.com/german-BioImaging/ome-zarr-acknowledgements/issues/new?template=add-contributor.yml) if you prefer not to edit the files yourself.
 
-Let [https://tiago.bio.br](Tiago) know or, if confortable, open an issue on the issue tracker
+### Open a pull request yourself
 
-### Add it directly
+1. Fork this repository.
+2. Add or extend a `resource` entry in [`people.yaml`](people.yaml). For example:
 
-– Fork the repository 
+    ```
+        name: RFC-6 people
+        url: https://ngff.openmicroscopy.org/rfc/6/index.html
+        people:
+          - Norman Rzepka
+    ```
 
-— Add a "resource" containing the person name to people.yaml, e.g. 
+   You can also append the person to the `others` resource if that is more appropriate.
+3. Ensure the person also appears in the top-level `people` list with at least one affiliation and (optionally) an ORCID.
+4. Confirm the referenced affiliation appears in [`affiliation_shortener.yaml`](affiliation_shortener.yaml) with a `short_name`. Add or update the entry if needed.
+5. Open a pull request describing the change.
 
-```
-    name: RFC-6 people
-    url: https://ngff.openmicroscopy.org/rfc/6/index.html
-    people: 
-      - Norman Rzepka
-```
+## Modify existing information
 
-alternatively, add it to the resource "others" 
+1. Edit the relevant entry in [`people.yaml`](people.yaml); every person listed there should keep at least one affiliation and, if possible, an ORCID.
+2. Update [`affiliation_shortener.yaml`](affiliation_shortener.yaml) whenever you rename, add, or remove affiliations so the short names and countries stay in sync.
+3. If you change data that affects how the site renders, preview [`index.html`](index.html) locally (e.g., via a simple HTTP server) to confirm the layout still looks right.
 
-— make sure your name is listed in the "people" list, with an affiliation and (optionally) an ORCID
+## Control the order within an affiliation
 
-— make sure your affiliation has a short name on `affiliation_shortener.yaml` 
-
-— make a pull request
-
-## Modifying information
-
-— to modify an affiliation or a mention in the upper or lower part, edit `people.yaml` directly 
-
-— make sure your name is listed in the "people" list, with some affiliation and (optionally) an ORCID
-
-— make sure your affiliation has a short name on `affiliation_shortener.yaml` 
-
-## Changing order within an affiliation
-
-Order of names within an affiliation can be overriden if needed on  `affiliation_shortener.yaml` by tweaking the "    order_override:" optional parameter. E.g., for GerBi
+Use the optional `order_override` parameter inside [`affiliation_shortener.yaml`](affiliation_shortener.yaml) to pin the display order for members of a specific affiliation. For example:
 
 ```
   - full_name: "German BioImaging-Gesellschaft für Mikroskopie und Bildanalyse e.V., Constance, Germany"
@@ -59,17 +57,13 @@ Order of names within an affiliation can be overriden if needed on  `affiliation
         - Stefanie Weidtkamp-Peters
 ```
 
+## Seed new data
 
-# Seeding 
+- Use an LLM to extract affiliations and format YAML directly from PDF author lists.
+- Call the CrossRef API (for example https://api.crossref.org/works/10.1038/s41592-021-01326-w) to enrich the metadata.
+- Copy subscribers from https://imagesc.zulipchat.com/#narrow/channel/328251-NGFF into an LLM prompt for fast formatting.
+- Shorten new affiliations by adding entries to [`affiliation_shortener.yaml`](affiliation_shortener.yaml).
 
-– Use LLM to extract affiliations + format YML based given a copy-paste of authors on PDFs for papers
+## Updates
 
-– Use the CrossRef API (e.g. https://api.crossref.org/works/10.1038/s41592-021-01326-w) to enrich with extra information
-
-– Copy-paste subscribers from https://imagesc.zulipchat.com/#narrow/channel/328251-NGFF into LLM for formatting
-
-– Manually shorten affiliations with affiliation_shortener.yaml
-
-# Updates
-
-Direct pull-requests changing the information on afilliation_shortner.yaml or people.yaml are welcome! 
+Direct pull requests that update [`people.yaml`](people.yaml) or [`affiliation_shortener.yaml`](affiliation_shortener.yaml) are always welcome.

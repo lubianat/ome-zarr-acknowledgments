@@ -110,6 +110,19 @@
         .theme-toggle:hover {
             border-color: var(--muted-color);
         }
+
+        .site-footer {
+            margin-top: 3rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid var(--soft-muted);
+            font-size: 0.85rem;
+            color: var(--muted-color);
+        }
+
+        .site-footer a {
+            color: inherit;
+            text-decoration: underline;
+        }
     </style>
 
     <script src="https://cdn.jsdelivr.net/npm/js-yaml@4.1.0/dist/js-yaml.min.js"></script>
@@ -128,6 +141,10 @@
     <div id="others"></div>
 
     <div id="error" class="error"></div>
+
+    <footer class="site-footer">
+        Something to change? <a href="https://github.com/german-BioImaging/ome-zarr-acknowledgements">let us know</a>
+    </footer>
 
     <script>
         // 🌈 rainbow color mapping, with a darker tone in light mode
