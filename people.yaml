@@ -57,11 +57,12 @@ people:
     affiliations:
       - Divisions of Molecular Cell and Developmental Biology, and Computational Biology, University of Dundee, Dundee, Scotland, UK
       - Glencoe Software Inc., Seattle, WA, USA
+      - Chan Zuckerberg Initiative (CZI)
 
   - name: Daniela Basurto-Lozada
     orcid: https://orcid.org/0000-0003-3943-8424
     affiliations:
-      - Biosciences Institute, Newcastle University, Newcastle upon Tyne, UK
+      - Sanger
   - name: John Bogovic
     orcid: https://orcid.org/0000-0002-4829-9457
     affiliations:
@@ -101,7 +102,7 @@ people:
   - name: Dave Horsfall
     orcid: https://orcid.org/0000-0002-8086-812X
     affiliations:
-      - Biosciences Institute, Newcastle University, Newcastle upon Tyne, UK
+      - Sanger
   - name: Mark S. Keller
     orcid: https://orcid.org/0000-0003-3003-874X
     affiliations:
@@ -138,6 +139,15 @@ people:
     orcid: https://orcid.org/0000-0003-3023-170X
     affiliations:
       - Friedrich Miescher Institute for Biomedical Imaging, Basel, Switzerland
+      - BioVisionCenter of the University of Zurich
+  - name: Lorenzo Cerrone
+    orcid:
+    affiliations:
+      - BioVisionCenter of the University of Zurich
+  - name: Virginie Uhlmann
+    orcid:
+    affiliations:
+      - BioVisionCenter of the University of Zurich
   - name: Jeremy Maitin-Shepard
     orcid: https://orcid.org/0000-0001-8453-7961
     affiliations:
@@ -158,6 +168,7 @@ people:
     orcid: https://orcid.org/0000-0003-1480-8695
     affiliations:
       - Divisions of Molecular Cell and Developmental Biology, and Computational Biology, University of Dundee, Dundee, Scotland, UK
+      - Dundee
   - name: Nils Norlin
     orcid: https://orcid.org/0000-0003-1970-3198
     affiliations:
@@ -197,7 +208,7 @@ people:
   - name: Sameeul Samee
     orcid: https://orcid.org/0009-0006-9305-7146
     affiliations:
-      - Axle Research and Technology, Rockville, USA
+      - NIH
   - name: Nicholas Schaub
     orcid: https://orcid.org/0000-0001-6581-7191
     affiliations:
@@ -205,7 +216,7 @@ people:
   - name: Hythem Sidky
     orcid: https://orcid.org/0000-0003-3532-4809
     affiliations:
-      - Axle Research and Technology, Rockville, USA
+      - NIH
   - name: Ahmet Can Solak
     orcid: https://orcid.org/0000-0002-1381-8309
     affiliations:
@@ -242,7 +253,7 @@ people:
     orcid: https://orcid.org/0000-0001-7397-8251
     affiliations:
       - Divisions of Molecular Cell and Developmental Biology, and Computational Biology, University of Dundee, Dundee, Scotland, UK
-  - name: Kevin A. Yamauchi
+  - name: Kevin Yamauchi
     orcid: https://orcid.org/0000-0002-7818-1388
     affiliations:
       - Department of Biosystems Science and Engineering, ETH Zürich, Zürich, Switzerland
@@ -354,10 +365,12 @@ people:
     affiliations: []
   - name: Eric Perlman
     orcid:
-    affiliations: []
+    affiliations:
+      - Yikes
   - name: Erick Ratamero
     orcid:
-    affiliations: []
+    affiliations:
+      - JAX
   - name: Farzad
     orcid:
     affiliations: []
@@ -372,7 +385,8 @@ people:
     affiliations: []
   - name: Francois Sherwood
     orcid:
-    affiliations: []
+    affiliations:
+      - EBI
   - name: giovanni
     orcid:
     affiliations: []
@@ -419,7 +433,9 @@ people:
 
   - name: Jonas Windhager
     orcid:
-    affiliations: []
+    affiliations:
+      - Science for Life Laboratory, KTH Royal Institute of Technology, Stockholm, Sweden
+
   - name: Joost de Folter
     orcid:
     affiliations: []
@@ -437,10 +453,16 @@ people:
     affiliations: []
   - name: Kolawole Babalola
     orcid:
-    affiliations: []
+    affiliations:
+      - EBI
+  - name: Liviu Anita
+    orcid:
+    affiliations:
+      - EBI
   - name: Konrad Rokicki
     orcid:
-    affiliations: []
+    affiliations:
+      - Janelia
   - name: Kyle I S Harrington
     orcid:
     affiliations: []
@@ -449,7 +471,8 @@ people:
     affiliations: []
   - name: Leonardo Schwarz
     orcid:
-    affiliations: []
+    affiliations:
+      - ETH
   - name: Lorenzo Gaifas
     orcid:
     affiliations: []
@@ -467,7 +490,8 @@ people:
     affiliations: []
   - name: Marvin Albert
     orcid:
-    affiliations: []
+    affiliations:
+      - Pasteur
   - name: Matt Smith
     orcid:
     affiliations: []
@@ -479,192 +503,195 @@ people:
     orcid:
     affiliations:
       - German BioImaging-Gesellschaft für Mikroskopie und Bildanalyse e.V., Constance, Germany
+  - name: Benjamin Pavie
+    orcid:
+    affiliations:
+      - VIB
 
-resources:
-  - title: OME-Zarr 2021 paper
-    url: https://doi.org/10.1038/s41592-021-01326-w
-    people:
-      - Josh Moore
-      - Chris Allan
-      - Sébastien Besson
-      - Jean-Marie Burel
-      - Erin Diel
-      - David Gault
-      - Kevin Kozlowski
-      - Dominik Lindner
-      - Melissa Linkert
-      - Trevor Manz
-      - Will Moore
-      - Constantin Pape
-      - Christian Tischer
-      - Jason R. Swedlow
+  - name: Ana Stojiljkovic
+    orcid:
+    affiliations:
+      - Bern
+  - name: Kiya Govek
+    orcid:
+    affiliations:
+      - The Jackson Laboratory (JAX)
 
-  - title: OME-Zarr 2023 paper
-    url: https://doi.org/10.1007/s00418-023-02209-1
-    people:
-      - Josh Moore
-      - Daniela Basurto-Lozada
-      - Sébastien Besson
-      - John Bogovic
-      - Jordão Bragantini
-      - Eva M. Brown
-      - Jean-Marie Burel
-      - Xavier Casas Moreno
-      - Gustavo de Medeiros
-      - Erin Diel
-      - David Gault
-      - Satrajit S. Ghosh
-      - Ilan Gold
-      - Yaroslav O. Halchenko
-      - Matthew Hartley
-      - Dave Horsfall
-      - Mark S. Keller
-      - Mark Kittisopikul
-      - Gabor Kovacs
-      - Aybüke Küpcü Yoldaş
-      - Koji Kyoda
-      - Albane le Tournoulx de la Villegeorges
-      - Tong Li
-      - Prisca Liberali
-      - Dominik Lindner
-      - Melissa Linkert
-      - Joel Lüthi
-      - Jeremy Maitin-Shepard
-      - Trevor Manz
-      - Luca Marconato
-      - Matthew McCormick
-      - Merlin Lange
-      - Khaled Mohamed
-      - Will Moore
-      - Nils Norlin
-      - Wei Ouyang
-      - Bugra Özdemir
-      - Giovanni Palla
-      - Constantin Pape
-      - Lucas Pelkmans
-      - Tobias Pietzsch
-      - Stephan Preibisch
-      - Martin Prete
-      - Norman Rzepka
-      - Sameeul Samee
-      - Nicholas Schaub
-      - Hythem Sidky
-      - Ahmet Can Solak
-      - David R. Stirling
-      - Jonathan Striebel
-      - Christian Tischer
-      - Dan Toloudis
-      - Isaac Virshup
-      - Petr Walczysko
-      - Alan M. Watson
-      - Erin Weisbart
-      - Frances Wong
-      - Kevin A. Yamauchi
-      - Omer Bayraktar
-      - Beth A. Cimini
-      - Nils Gehlenborg
-      - Muzlifah Haniffa
-      - Nathan Hotaling
-      - Shuichi Onami
-      - Loic A. Royer
-      - Stephan Saalfeld
-      - Oliver Stegle
-      - Fabian J. Theis
-      - Jason R. Swedlow
+  - name: Kedar Narayan
+    orcid:
+    affiliations:
+      - National Cancer Institute
 
-  - title: OME-NGFF channel (11/2025)
-    url: https://imagesc.zulipchat.com/#narrow/channel/328251-NGFF
-    people:
-      - Tiago Lubiana
-      - Aafke Gros
-      - Alan Liddell
-      - Andreas Eisenbarth
-      - Andrzej Oles
-      - Artür Manukyan
-      - Benedikt Best
-      - Bugra Özdemir
-      - Caleb Hulbert
-      - Cameron Lloyd
-      - Chris Barnes
-      - Chris Wood
-      - Christian Tischer
-      - Christophe Avenel
-      - Constantin Pape
-      - Curtis Rueden
-      - Dan Toloudis
-      - Daniela Basurto Lozada
-      - Dave Horsfall
-      - David Feng
-      - David Gault
-      - David Stansby
-      - Davis Bennett
-      - Doug Shepherd
-      - Eduardo Brito Freitez
-      - Elise Liu
-      - Elliott Magnuson
-      - Eric Leroy
-      - Eric Perlman
-      - Erick Ratamero
-      - Farzad
-      - Felix Meyenhofer
-      - Fernando Cervantes Sanchez
-      - Florian Levet
-      - Francois Sherwood
-      - giovanni
-      - Guillaume Gay
-      - Guillaume Witz
-      - Gustavo de Medeiros
-      - Haowen
-      - Hugo_Blanc
-      - Igor Tatarnikov
-      - Ilan Gold
-      - Isaac Virshup
-      - Jan Eglinger
-      - Jean-Karim Hériché
-      - Jens Wendt
-      - Jenu Chacko
-      - Jeremy Delahanty
-      - jni | Juan Nunez-Iglesias
-      - Joel Lüthi
-      - Johannes Elferich
-      - Johannes Soltwedel
-      - John Bogovic
-      - Jonas Windhager
-      - Joost de Folter
-      - Jordão Bragantini
-      - Josh Moore
-      - Jules Scholler
-      - Ken Ho
-      - Kevin Yamauchi
-      - Kimberly Meechan
-      - Ko Sugawara
-      - Kolawole Babalola
-      - Konrad Rokicki
-      - Kyle I S Harrington
-      - Lachlan Deakin
-      - Leonardo Schwarz
-      - Lorenzo Gaifas
-      - Luca Marconato
-      - Luis Kuhn Cuellar
-      - Marco Dalla Vecchia
-      - Mark Keller
-      - Mark Kittisopikul
-      - Mark Tsuchida
-      - Martin Jones
-      - Marvin Albert
-      - Matt McCormick
-      - Matt Smith
-      - Matthew Hartley
+  - name: Valentina Marcelli
+    orcid:
+    affiliations:
+      - BioVisionCenter of the University of Zurich
 
-  - title: OME Team (GerBi)
-    url: https://www.openmicroscopy.org/teams/
-    people:
-      - Janina Hanne
-      - Josh Moore
-      - Johannes Soltwedel
-      - Tiago Lubiana
-      - Stefanie Weidtkamp-Peters
+  - name: Vladimir Ulman
+    orcid:
+    affiliations:
+      - Masaryk University Brno
+  - name: Rémy Dornier
+    orcid:
+    affiliations:
+      - EPFL
 
-  - title: others
-    url: https://example.org
-    people: []
+  - name: Franziska Moos
+    orcid:
+    affiliations:
+      - FMI
+
+  - name: Jan Eglinger
+    orcid:
+    affiliations:
+      - FMI
+
+  - name: Fabio Steffen
+    orcid:
+    affiliations:
+      - Zürich
+
+  - name: Flurin Sturzenegger
+    orcid:
+    affiliations:
+      - Zürich
+
+  - name: Grégory Paul
+    orcid:
+    affiliations:
+      - Zürich
+
+  - name: Reto Gerber
+    orcid:
+    affiliations:
+      - Zürich
+
+  - name: Ruth Hornbachner
+    orcid:
+    affiliations:
+      - Zürich
+
+  - name: Oane Gros
+    orcid:
+    affiliations:
+      - EMBL
+
+  - name: Wouter-Michiel Vierdag
+    orcid:
+    affiliations:
+      - EMBL
+
+  - name: Tom Boissonnet
+    orcid:
+    affiliations:
+      - German BioImaging-Gesellschaft für Mikroskopie und Bildanalyse e.V., Constance, Germany
+
+  - name: Stefan Hahmann
+    orcid:
+    affiliations:
+      - TU Dresden
+
+  - name: Guillaume Gay
+    orcid:
+    affiliations:
+      - France BioImaging
+
+  - name: Daniel Krentzel
+    orcid:
+    affiliations:
+      - Pasteur
+
+  - name: Hiroya Itoga
+    orcid:
+    affiliations:
+      - RIKEN Center for Biosystems Dynamics Research, Kobe, Japan
+
+  - name: Joost de Folter
+    orcid:
+    affiliations:
+      - Crick
+
+  - name: Kenneth Ho
+    orcid:
+    affiliations:
+      - Crick
+
+  - name: Martin Jones
+    orcid:
+    affiliations:
+      - Crick
+
+  - name: David Stansby
+    orcid:
+    affiliations:
+      - UCL
+
+  - name: Sean Meharry
+    orcid:
+    affiliations:
+      - Allen Institute for Cell Science, Seattle, WA, USA
+
+  - name: Rachael Huxford
+    orcid:
+    affiliations:
+      - UMN
+
+  - name: Dominique Roux
+    orcid:
+    affiliations:
+      - Roche
+
+  - name: Maximilian Schulz
+    orcid:
+    affiliations:
+      - Roche
+
+  - name: Sebastian Rhode
+    orcid:
+    affiliations:
+      - Zeiss
+
+  - name: Stephan Wagner-Conrad
+    orcid:
+    affiliations:
+      - Zeiss
+
+  - name: Christoph Engwer
+    orcid:
+    affiliations:
+      - Many more
+
+  - name: Davis Bennett
+    orcid:
+    affiliations:
+      - Many more
+
+  - name: Dmytro Horyslavets
+    orcid:
+    affiliations:
+      - Many more
+
+  - name: Filip Mroz
+    orcid:
+    affiliations:
+      - Many more
+
+  - name: Igor Zubarev
+    orcid:
+    affiliations:
+      - Many more
+
+  - name: Szymon Stoma
+    orcid:
+    affiliations:
+      - Many more
+
+  - name: Vera Galinova
+    orcid:
+    affiliations:
+      - Many more
+
+  - name: Peter Sobolewski
+    orcid:
+    affiliations:
+      - JAX

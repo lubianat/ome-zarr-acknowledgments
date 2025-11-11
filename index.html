@@ -138,7 +138,7 @@
     <div id="paper-people"></div>
 
     <h2>along with 120+ members of the image.sc group:</h2>
-    <div id="others"></div>
+    <div id="others"></div>...
 
     <div id="error" class="error"></div>
 
@@ -197,19 +197,23 @@
             const errorEl = document.getElementById('error');
 
             try {
-                const [peopleResp, affResp] = await Promise.all([
+                const [peopleResp, resourcesResp, affResp] = await Promise.all([
                     fetch('people.yaml'),
+                    fetch('resources.yaml'),
                     fetch('affiliation_shortener.yaml'),
                 ]);
 
                 if (!peopleResp.ok) throw new Error('Cannot load people.yaml: ' + peopleResp.statusText);
+                if (!resourcesResp.ok) throw new Error('Cannot load resources.yaml: ' + resourcesResp.statusText);
                 if (!affResp.ok) throw new Error('Cannot load affiliation_shortener.yaml: ' + affResp.statusText);
 
-                const [peopleText, affText] = await Promise.all([peopleResp.text(), affResp.text()]);
+                const [peopleText, resourcesText, affText] = await Promise.all([peopleResp.text(), resourcesResp.text(), affResp.text()]);
                 const peopleData = jsyaml.load(peopleText);
                 const affData = jsyaml.load(affText);
+                const resourcesData = jsyaml.load(resourcesText);
+
                 const people = peopleData.people || [];
-                const resources = peopleData.resources || [];
+                const resources = resourcesData.resources || [];
                 const affiliations = affData.affiliations || [];
 
                 const knownPeople = new Set(people.map(p => p.name));
