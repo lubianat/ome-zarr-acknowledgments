@@ -1,0 +1,129 @@
+# affiliation_shortener.yaml
+affiliations:
+  - full_name: "German BioImaging-Gesellschaft für Mikroskopie und Bildanalyse e.V., Constance, Germany"
+    short_name: "GerBI"
+    country_code: "DE"
+
+  - full_name: "University of Dundee"
+    short_name: "University of Dundee"
+    country_code: "GB"
+
+  - full_name: "Glencoe Software Inc., Seattle, WA, USA"
+    short_name: "Glencoe Software"
+    country_code: "US"
+
+  - full_name: "Divisions of Molecular Cell and Developmental Biology, and Computational Biology, University of Dundee, Dundee, Scotland, UK"
+    short_name: "University of Dundee (MCD & Comp Bio)"
+    country_code: "GB"
+
+  - full_name: "Harvard Medical School, Boston, MA, USA"
+    short_name: "Harvard Medical School"
+    country_code: "US"
+
+  - full_name: "Georg-August-Universität Göttingen, Göttingen, Germany"
+    short_name: "Uni Göttingen"
+    country_code: "DE"
+
+  - full_name: "EMBL, Heidelberg, Germany"
+    short_name: "EMBL Heidelberg"
+    country_code: "DE"
+
+  - full_name: "Biosciences Institute, Newcastle University, Newcastle upon Tyne, UK"
+    short_name: "Newcastle University Biosciences"
+    country_code: "GB"
+
+  - full_name: "Janelia Research Campus, Howard Hughes Medical Institute, Ashburn, VA, USA"
+    short_name: "HHMI Janelia"
+    country_code: "US"
+
+  - full_name: "Chan Zuckerberg Biohub, San Francisco, CA, USA"
+    short_name: "CZ Biohub SF"
+    country_code: "US"
+
+  - full_name: "Allen Institute for Cell Science, Seattle, WA, USA"
+    short_name: "Allen Institute Cell Science"
+    country_code: "US"
+
+  - full_name: "Science for Life Laboratory, KTH Royal Institute of Technology, Stockholm, Sweden"
+    short_name: "SciLifeLab KTH"
+    country_code: "SE"
+
+  - full_name: "Friedrich Miescher Institute for Biomedical Imaging, Basel, Switzerland"
+    short_name: "FMI Basel"
+    country_code: "CH"
+
+  - full_name: "Massachusetts Institute of Technology, Cambridge, MA, USA"
+    short_name: "MIT"
+    country_code: "US"
+
+  - full_name: "Dartmouth College, Hanover, NH, USA"
+    short_name: "Dartmouth College"
+    country_code: "US"
+
+  - full_name: "European Molecular Biology Laboratory, European Bioinformatics Institute, EMBL-EBI, Cambridge, UK"
+    short_name: "EMBL-EBI"
+    country_code: "GB"
+
+  - full_name: "Google Research, Mountain View, CA, USA"
+    short_name: "Google Research"
+    country_code: "US"
+
+  - full_name: "Kitware, Inc, Carrboro, NC, USA"
+    short_name: "Kitware"
+    country_code: "US"
+
+  - full_name: "Department of Experimental Medical Science & Lund Bioimaging Centre, Lund University, Lund, Sweden"
+    short_name: "Lund University / Lund Bioimaging"
+    country_code: "SE"
+
+  - full_name: "Euro-BioImaging Bio-Hub, EMBL, Heidelberg, Germany"
+    short_name: "Euro-BioImaging Bio-Hub"
+    country_code: "DE"
+
+  - full_name: "Institute of Computational Biology, Helmholtz Zentrum München, Neuherberg, Germany"
+    short_name: "Helmholtz München"
+    country_code: "DE"
+
+  - full_name: "University of Zürich, Zürich, Switzerland"
+    short_name: "University of Zürich"
+    country_code: "CH"
+
+  - full_name: "scalable minds GmbH, Potsdam, Germany"
+    short_name: "scalable minds"
+    country_code: "DE"
+
+  - full_name: "Wellcome Sanger Institute, Hinxton, UK"
+    short_name: "Wellcome Sanger"
+    country_code: "GB"
+
+  - full_name: "Information Technology Branch, National Center for Advancing Translational Science, National Institutes of Health, Bethesda, USA"
+    short_name: "NCATS / NIH IT Branch"
+    country_code: "US"
+
+  - full_name: "Axle Research and Technology, Rockville, USA"
+    short_name: "Axle RT"
+    country_code: "US"
+
+  - full_name: "University of Pittsburgh, Pittsburgh, PA, USA"
+    short_name: "University of Pittsburgh"
+    country_code: "US"
+
+  - full_name: "Imaging Platform, Broad Institute of MIT and Harvard, Cambridge, MA, USA"
+    short_name: "Broad Institute Imaging Platform"
+    country_code: "US"
+
+  - full_name: "Department of Biosystems Science and Engineering, ETH Zürich, Zürich, Switzerland"
+    short_name: "ETH Zürich D-BSSE"
+    country_code: "CH"
+
+  - full_name: "Allen Institute for Neural Dynamics, Seattle, WA, USA"
+    short_name: "Allen Institute Neural Dynamics"
+    country_code: "US"
+
+  - full_name: "RIKEN Center for Biosystems Dynamics Research, Kobe, Japan"
+    short_name: "RIKEN BDR"
+    country_code: "JP"
+
+  - full_name: "Genome Biology Unit, European Molecular Biology Laboratory (EMBL), Heidelberg, Germany"
+    short_name: "EMBL Genome Biology Unit"
+    country_code: "DE"
