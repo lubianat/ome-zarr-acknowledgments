@@ -218,7 +218,7 @@ people:
     orcid: https://orcid.org/0000-0002-5547-5973
     affiliations:
       - scalable minds GmbH, Potsdam, Germany
-  - name: Daniel Toloudis
+  - name: Dan Toloudis
     orcid: https://orcid.org/0000-0003-2620-1233
     affiliations:
       - Allen Institute for Cell Science, Seattle, WA, USA
@@ -290,7 +290,8 @@ people:
   # NEW: OME-NGFF Zulip channel subscribers (ORCIDs unknown here)
   - name: Tiago Lubiana
     orcid:
-    affiliations: []
+    affiliations:
+      - German BioImaging-Gesellschaft für Mikroskopie und Bildanalyse e.V., Constance, Germany
   - name: Aafke Gros
     orcid:
     affiliations: []
@@ -413,7 +414,9 @@ people:
     affiliations: []
   - name: Johannes Soltwedel
     orcid:
-    affiliations: []
+    affiliations:
+      - German BioImaging-Gesellschaft für Mikroskopie und Bildanalyse e.V., Constance, Germany
+
   - name: Jonas Windhager
     orcid:
     affiliations: []
@@ -468,6 +471,14 @@ people:
   - name: Matt Smith
     orcid:
     affiliations: []
+  - name: Stefanie Weidtkamp-Peters
+    orcid:
+    affiliations:
+      - German BioImaging-Gesellschaft für Mikroskopie und Bildanalyse e.V., Constance, Germany
+  - name: Janina Hanne
+    orcid:
+    affiliations:
+      - German BioImaging-Gesellschaft für Mikroskopie und Bildanalyse e.V., Constance, Germany
 
 resources:
   - title: OME-Zarr 2021 paper
@@ -542,7 +553,7 @@ resources:
       - David R. Stirling
       - Jonathan Striebel
       - Christian Tischer
-      - Daniel Toloudis
+      - Dan Toloudis
       - Isaac Virshup
       - Petr Walczysko
       - Alan M. Watson
@@ -571,7 +582,7 @@ resources:
       - Andrzej Oles
       - Artür Manukyan
       - Benedikt Best
-      - Bugra Oezdemir
+      - Bugra Özdemir
       - Caleb Hulbert
       - Cameron Lloyd
       - Chris Barnes
@@ -620,7 +631,7 @@ resources:
       - John Bogovic
       - Jonas Windhager
       - Joost de Folter
-      - Jordao Bragantini
+      - Jordão Bragantini
       - Josh Moore
       - Jules Scholler
       - Ken Ho
@@ -644,3 +655,16 @@ resources:
       - Matt McCormick
       - Matt Smith
       - Matthew Hartley
+
+  - title: OME Team (GerBi)
+    url: https://www.openmicroscopy.org/teams/
+    people:
+      - Janina Hanne
+      - Josh Moore
+      - Johannes Soltwedel
+      - Tiago Lubiana
+      - Stefanie Weidtkamp-Peters
+
+  - title: others
+    url: https://example.org
+    people: []

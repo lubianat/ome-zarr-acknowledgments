@@ -3,6 +3,12 @@ affiliations:
   - full_name: "German BioImaging-Gesellschaft für Mikroskopie und Bildanalyse e.V., Constance, Germany"
     short_name: "GerBI"
     country_code: "DE"
+    order_override:
+      - Josh Moore
+      - Johannes Soltwedel
+      - Tiago Lubiana
+      - Janina Hanne
+      - Stefanie Weidtkamp-Peters
 
   - full_name: "University of Dundee"
     short_name: "University of Dundee"
