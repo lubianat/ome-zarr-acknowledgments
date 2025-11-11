@@ -130,7 +130,7 @@
 
 <body>
     <div class="top-bar">
-        <h1>OME-Zarr &amp; OME-NGFF Contributors</h1>
+        <h1>OME-Zarr Contributors</h1>
         <button id="theme-toggle" class="theme-toggle" type="button">Switch to light mode</button>
     </div>
 
@@ -347,7 +347,7 @@
                     });
                 });
 
-                // NGFF-only people
+                // image.sc-only people
                 const othersContainer = document.getElementById('others');
                 imageScOnly.forEach(p => {
                     const div = document.createElement('div');
@@ -356,7 +356,7 @@
                     othersContainer.appendChild(div);
                 });
 
-                console.info('%c✅ Load complete', 'color: lightgreen', paperPeople.length, 'upper contributors,', imageScOnly.length, 'NGFF-only.');
+                console.info('%c✅ Load complete', 'color: lightgreen', paperPeople.length, 'upper contributors,', imageScOnly.length, 'image.sc-only.');
             } catch (err) {
                 console.error(err);
                 errorEl.textContent = err.message;
