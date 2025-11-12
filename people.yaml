@@ -5,9 +5,9 @@ people:
       - German BioImaging-Gesellschaft für Mikroskopie und Bildanalyse e.V., Constance, Germany
       - University of Dundee
   - name: Chris Allan
-    orcid:
+    orcid: T
     affiliations:
-      - Glencoe Software Inc., Seattle, WA, USA
+      - Glencoe Software Inc., Seattle, WA, USA TEST
   - name: Sébastien Besson
     orcid: https://orcid.org/0000-0001-8783-1429
     affiliations:
