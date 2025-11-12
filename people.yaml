@@ -5,14 +5,14 @@ people:
       - German BioImaging-Gesellschaft für Mikroskopie und Bildanalyse e.V., Constance, Germany
       - University of Dundee
   - name: Chris Allan
-    orcid:
+    orcid: T
     affiliations:
-      - Glencoe Software Inc., Seattle, WA, USA
+      - Glencoe Software Inc., Seattle, WA, USA TEST
   - name: Sébastien Besson
     orcid: https://orcid.org/0000-0001-8783-1429
     affiliations:
       - Divisions of Molecular Cell and Developmental Biology, and Computational Biology, University of Dundee, Dundee, Scotland, UK
-  - name: Jean-Marie Burel
+  - name: Jean-Marie Burel ok
     orcid: https://orcid.org/0000-0002-1789-1861
     affiliations:
       - Divisions of Molecular Cell and Developmental Biology, and Computational Biology, University of Dundee, Dundee, Scotland, UK
