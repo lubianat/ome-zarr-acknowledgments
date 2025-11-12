@@ -297,6 +297,10 @@ people:
     orcid: https://orcid.org/0000-0002-2419-1943
     affiliations:
       - Institute of Computational Biology, Helmholtz Zentrum München, Neuherberg, Germany
+  - name: Benedikt Best
+    orcid: https://orcid.org/0000-0001-6965-1117
+    affiliations:
+      - EMBL, Heidelberg, Germany
 
   # NEW: OME-NGFF Zulip channel subscribers (ORCIDs unknown here)
   - name: Tiago Lubiana
@@ -316,9 +320,6 @@ people:
     orcid:
     affiliations: []
   - name: Artür Manukyan
-    orcid:
-    affiliations: []
-  - name: Benedikt Best
     orcid:
     affiliations: []
   - name: Caleb Hulbert
