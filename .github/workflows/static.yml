@@ -29,7 +29,6 @@ jobs:
           publish_branch: gh-pages
 
   preview:
-    # Only run if PR has the 'preview' label (for both same-repo and fork PRs)
     if: |
       github.event_name == 'pull_request' && 
       contains(github.event.pull_request.labels.*.name, 'preview')
@@ -40,16 +39,7 @@ jobs:
         with:
           ref: ${{ github.event.pull_request.head.sha }}
 
-      - name: Deploy PR Preview
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./
-          publish_branch: gh-pages
-          destination_dir: pr_preview/${{ github.event.number }}
-          keep_files: true
-
-      - name: Create/Update PR Comment
+      - name: Create PR Comment (Deployment Started)
         uses: actions/github-script@v6
         with:
           script: |
@@ -63,10 +53,10 @@ jobs:
             
             const botComment = comments.find(comment => 
               comment.user.type === 'Bot' && 
-              comment.body.includes('Preview deployed')
+              comment.body.includes('Preview deployment')
             );
             
-            const commentBody = `## 🌐 Preview Deployed\n\n**Preview URL**: [${previewUrl}](${previewUrl})\n\nThis preview will be automatically updated with new commits.`;
+            const commentBody = `## 🌐 Preview Deployment Started\n\n**Preview URL**: [${previewUrl}](${previewUrl})\n\nDeployment is in progress and should be available shortly.\n\n⚠️ **Security Notice**: This preview is a snapshot and will not automatically update with new commits.`;
             
             if (botComment) {
               await github.rest.issues.updateComment({
@@ -83,3 +73,12 @@ jobs:
                 body: commentBody
               });
             }
+
+      - name: Deploy PR Preview
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./
+          publish_branch: gh-pages
+          destination_dir: pr_preview/${{ github.event.number }}
+          keep_files: true
