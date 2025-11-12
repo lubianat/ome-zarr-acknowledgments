@@ -1,0 +1,12 @@
+name: Debug PR Target
+on:
+  pull_request_target:
+    types: [opened, reopened, labeled, unlabeled, synchronize, closed]
+jobs:
+  debug:
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+          echo "Event: ${{ github.event.action }}"
+          echo "PR: #${{ github.event.pull_request.number }}"
+          echo "Labels: ${{ toJson(github.event.pull_request.labels.*.name) }}"
