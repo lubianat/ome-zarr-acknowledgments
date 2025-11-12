@@ -57,7 +57,7 @@ jobs:
               comment.body.includes('Preview deployment')
             );
 
-            const commentBody = `## 🌐 Preview Deployment Started\n\n**Preview URL**: [${previewUrl}](${previewUrl})\n\nDeployment is in progress and should be available shortly.\n\n⚠️ **Security Notice**: This preview is a snapshot and will not automatically update with new commits.`;
+            const commentBody = `## 🌐 Preview Deployment Started\n\n**Preview URL**: [${previewUrl}](${previewUrl})\n\nDeployment is in progress and should be available shortly.`;
 
             if (botComment) {
               await github.rest.issues.updateComment({
