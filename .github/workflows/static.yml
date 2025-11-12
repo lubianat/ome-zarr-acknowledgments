@@ -5,7 +5,7 @@ on:
     branches: ["main"]
   pull_request:
     branches: ["main"]
-    types: [opened, synchronize, reopened]
+    types: [opened, synchronize, reopened, labeled]
 
 permissions:
   contents: write
@@ -29,7 +29,10 @@ jobs:
           publish_branch: gh-pages
 
   preview:
-    if: github.event_name == 'pull_request'
+    # Only run if PR has the 'preview' label (for both same-repo and fork PRs)
+    if: |
+      github.event_name == 'pull_request' && 
+      contains(github.event.pull_request.labels.*.name, 'preview')
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
