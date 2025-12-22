@@ -5,7 +5,7 @@ on:
     branches: ["main"]
   pull_request_target:
     branches: ["main"]
-    types: [opened, synchronize, reopened, labeled]
+    types: [opened, synchronize, reopened, labeled, closed]
 
 permissions:
   contents: write
@@ -32,6 +32,7 @@ jobs:
   preview:
     if: |
       github.event_name == 'pull_request_target' && 
+      github.event.action != 'closed' &&
       contains(github.event.pull_request.labels.*.name, 'preview')
     runs-on: ubuntu-latest
     steps:
@@ -84,3 +85,34 @@ jobs:
           publish_branch: gh-pages
           destination_dir: pr_preview/${{ github.event.number }}
           keep_files: true
+
+  cleanup-preview:
+    if: |
+      github.event_name == 'pull_request_target' &&
+      github.event.action == 'closed'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout gh-pages
+        uses: actions/checkout@v4
+        with:
+          ref: gh-pages
+          fetch-depth: 0
+
+      - name: Remove preview directory
+        id: remove
+        run: |
+          rm -rf pr_preview/${{ github.event.number }}
+          if [ -z "$(git status --porcelain)" ]; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Commit and push cleanup
+        if: steps.remove.outputs.changed == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -m "Remove preview for PR #${{ github.event.number }}"
+          git push
