@@ -5,7 +5,7 @@ on:
     branches: ["main"]
   pull_request_target:
     branches: ["main"]
-    types: [opened, synchronize, reopened, labeled, closed]
+    types: [opened, synchronize, reopened, labeled, unlabeled, closed]
 
 permissions:
   contents: write
@@ -89,7 +89,10 @@ jobs:
   cleanup-preview:
     if: |
       github.event_name == 'pull_request_target' &&
-      github.event.action == 'closed'
+      (
+        github.event.action == 'closed' ||
+        (github.event.action == 'unlabeled' && github.event.label.name == 'preview')
+      )
     runs-on: ubuntu-latest
     steps:
       - name: Checkout gh-pages
